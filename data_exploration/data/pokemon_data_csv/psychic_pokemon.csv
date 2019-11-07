@@ -1,0 +1,9 @@
+,#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+62,63,Abra,Psychic,,310,25,20,15,105,55,90,1,False
+63,64,Kadabra,Psychic,,400,40,35,30,120,70,105,1,False
+64,65,Alakazam,Psychic,,500,55,50,45,135,95,120,1,False
+95,96,Drowzee,Psychic,,328,60,48,45,43,90,42,1,False
+96,97,Hypno,Psychic,,483,85,73,70,73,115,67,1,False
+121,122,Mr. Mime,Psychic,Fairy,460,40,45,65,100,120,90,1,False
+149,150,Mewtwo,Psychic,,680,106,110,90,154,90,130,1,True
+150,151,Mew,Psychic,,600,100,100,100,100,100,100,1,False
