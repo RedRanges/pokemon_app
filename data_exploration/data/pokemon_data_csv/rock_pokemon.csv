@@ -1,0 +1,10 @@
+,#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+73,74,Geodude,Rock,Ground,300,40,80,100,30,30,20,1,False
+74,75,Graveler,Rock,Ground,390,55,95,115,45,45,35,1,False
+75,76,Golem,Rock,Ground,495,80,120,130,55,65,45,1,False
+94,95,Onix,Rock,Ground,385,35,45,160,30,45,70,1,False
+137,138,Omanyte,Rock,Water,355,35,40,100,90,55,35,1,False
+138,139,Omastar,Rock,Water,495,70,60,125,115,70,55,1,False
+139,140,Kabuto,Rock,Water,355,30,80,90,55,45,55,1,False
+140,141,Kabutops,Rock,Water,495,60,115,105,65,70,80,1,False
+141,142,Aerodactyl,Rock,Flying,515,80,105,65,60,75,130,1,False

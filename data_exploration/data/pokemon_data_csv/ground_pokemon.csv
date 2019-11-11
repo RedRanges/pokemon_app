@@ -1,0 +1,9 @@
+,#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+26,27,Sandshrew,Ground,,300,50,75,85,20,30,40,1,False
+27,28,Sandslash,Ground,,450,75,100,110,45,55,65,1,False
+49,50,Diglett,Ground,,265,10,55,25,35,45,95,1,False
+50,51,Dugtrio,Ground,,405,35,80,50,50,70,120,1,False
+103,104,Cubone,Ground,,320,50,50,95,40,50,35,1,False
+104,105,Marowak,Ground,,425,60,80,110,50,80,45,1,False
+110,111,Rhyhorn,Ground,Rock,345,80,85,95,30,30,25,1,False
+111,112,Rhydon,Ground,Rock,485,105,130,120,45,45,40,1,False

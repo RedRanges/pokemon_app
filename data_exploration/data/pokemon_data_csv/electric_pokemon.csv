@@ -1,0 +1,10 @@
+,#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+24,25,Pikachu,Electric,,320,35,55,40,50,50,90,1,False
+25,26,Raichu,Electric,,485,60,90,55,90,80,110,1,False
+80,81,Magnemite,Electric,Steel,325,25,35,70,95,55,45,1,False
+81,82,Magneton,Electric,Steel,465,50,60,95,120,70,70,1,False
+99,100,Voltorb,Electric,,330,40,30,50,55,55,100,1,False
+100,101,Electrode,Electric,,480,60,50,70,80,80,140,1,False
+124,125,Electabuzz,Electric,,490,65,83,57,95,85,105,1,False
+134,135,Jolteon,Electric,,525,65,65,60,110,95,130,1,False
+144,145,Zapdos,Electric,Flying,580,90,90,85,125,90,100,1,True

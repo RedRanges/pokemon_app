@@ -1,0 +1,23 @@
+,#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+15,16,Pidgey,Normal,Flying,251,40,45,40,35,35,56,1,False
+16,17,Pidgeotto,Normal,Flying,349,63,60,55,50,50,71,1,False
+17,18,Pidgeot,Normal,Flying,479,83,80,75,70,70,101,1,False
+18,19,Rattata,Normal,,253,30,56,35,25,35,72,1,False
+19,20,Raticate,Normal,,413,55,81,60,50,70,97,1,False
+20,21,Spearow,Normal,Flying,262,40,60,30,31,31,70,1,False
+21,22,Fearow,Normal,Flying,442,65,90,65,61,61,100,1,False
+38,39,Jigglypuff,Normal,Fairy,270,115,45,20,45,25,20,1,False
+39,40,Wigglytuff,Normal,Fairy,435,140,70,45,85,50,45,1,False
+51,52,Meowth,Normal,,290,40,45,35,40,40,90,1,False
+52,53,Persian,Normal,,440,65,70,60,65,65,115,1,False
+82,83,Farfetch'd,Normal,Flying,352,52,65,55,58,62,60,1,False
+83,84,Doduo,Normal,Flying,310,35,85,45,35,35,75,1,False
+84,85,Dodrio,Normal,Flying,460,60,110,70,60,60,100,1,False
+107,108,Lickitung,Normal,,385,90,55,75,60,75,30,1,False
+112,113,Chansey,Normal,,450,250,5,5,35,105,50,1,False
+114,115,Kangaskhan,Normal,,490,105,95,80,40,80,90,1,False
+127,128,Tauros,Normal,,490,75,100,95,40,70,110,1,False
+131,132,Ditto,Normal,,288,48,48,48,48,48,48,1,False
+132,133,Eevee,Normal,,325,55,55,50,45,65,55,1,False
+136,137,Porygon,Normal,,395,65,60,70,85,75,40,1,False
+142,143,Snorlax,Normal,,540,160,110,65,65,110,30,1,False

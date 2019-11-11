@@ -1,0 +1,13 @@
+,#,Name,Type 1,Type 2,Total,HP,Attack,Defense,Sp. Atk,Sp. Def,Speed,Generation,Legendary
+9,10,Caterpie,Bug,,195,45,30,35,20,20,45,1,False
+10,11,Metapod,Bug,,205,50,20,55,25,25,30,1,False
+11,12,Butterfree,Bug,Flying,395,60,45,50,90,80,70,1,False
+12,13,Weedle,Bug,Poison,195,40,35,30,20,20,50,1,False
+13,14,Kakuna,Bug,Poison,205,45,25,50,25,25,35,1,False
+14,15,Beedrill,Bug,Poison,395,65,90,40,45,80,75,1,False
+45,46,Paras,Bug,Grass,285,35,70,55,45,55,25,1,False
+46,47,Parasect,Bug,Grass,405,60,95,80,60,80,30,1,False
+47,48,Venonat,Bug,Poison,305,60,55,50,40,55,45,1,False
+48,49,Venomoth,Bug,Poison,450,70,65,60,90,75,90,1,False
+122,123,Scyther,Bug,Flying,500,70,110,80,55,80,105,1,False
+126,127,Pinsir,Bug,,500,65,125,100,55,70,85,1,False
