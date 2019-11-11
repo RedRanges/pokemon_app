@@ -85,3 +85,15 @@ svg {
   height : 400px;
   width : 550px;
 }
+
+.nameContainer {
+  width : 550px;
+  height : 50px;
+  background-color: goldenrod;
+  display : block;
+  clear : both;
+  align-items : center;
+  justify-content: center;
+  font-size : 40px;
+  text-align: center;
+}

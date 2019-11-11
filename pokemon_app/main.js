@@ -14,17 +14,22 @@ import { psychic } from './data/psychic_pokemon.js';
 import { rock } from './data/rock_pokemon.js';
 import { water } from './data/water_pokemon.js';
 
+
+
+
 var width = 550;
 var height = 400;
 const svgHeight = 400;
 const svgWidth = 550;
 // var rectWidth = 35;
+const margin = ({top: 20, right: 0, bottom: 30, left: 40})
 
 const pokemonTypes = [ 'bug', 'dragon', 'electric', 'fairy', 'fighting', 
                       'fire', 'ghost', 'grass', 'ground', 'ice', 'normal', 
                       'poison', 'psychic', 'rock', 'water' ];
 
-const xStats = [ 'Attack', 'Defense', 'HP', 'Sp. Atk', 'Sp. Def', 'Speed' ];
+const xStats = [ 'HP', 'Attack', 'Defense', 'Sp. Atk', 'Sp. Def', 'Speed' ];
+const barColors = ['#ed4628', '#fcba03', 'cornflowerblue', 'mediumseagreen', 'darkorchid	', '#ed8311' ]
 
 d3.select( '.container' ).style( 'background-color', 'ghostwhite');
 const svg = d3.select('svg');
@@ -94,35 +99,74 @@ function createPokemonButtons( d, i ) {
 
 
 function displayStats( d, i ) {
+
+  d3.select('.nameContainer').text( this.innerHTML );
+
+  // let data = d;
   let data = [];
-  console.log( d );
+  let dataLength = 5;
+
   xStats.forEach( function( element ) {
-    data.push( d[ element ] );
+    data.push( {
+      name : element, 
+      value : d[ element ]
+    } );
   } );
-  let barWidth = svgWidth / data.length;
+
+  let barWidth = svgWidth / dataLength;
   let barPadding = 5;
 
-  let bar = svg.selectAll( 'g' )
-                  .data( data )
-                  .enter().append( 'g' );
-  
-  bar.selectAll( 'rect' )
+
+
+  let x = d3.scaleBand()
+        .domain( data.map( d=> d.name ))
+        .range( [margin.left, width - margin.right ] )
+        .padding( 0.1 )
+
+  let y = d3.scaleLinear()
+        .domain([ 0, d3.max( data, d => d.value )]).nice()
+        .range([ height - margin.bottom, margin.top ])
+
+  let xAxis = g => g
+      .attr("transform", `translate(0,${height - margin.bottom})`)
+      .call(d3.axisBottom(x).tickSizeOuter(0));
+
+  let yAxis = g => g
+      .attr("transform", `translate(${margin.left},0)`)
+      .attr( 'class', 'yAxis' )
+      .call(d3.axisLeft(y))
+      .call(g => g.select(".domain").remove());
+
+    // exit data
+    d3.selectAll('.bar')
+      .remove()
+      .exit()
+      .data( data );
+
+    d3.selectAll('.yAxis')
+      .remove()
+      .exit();
+
+    svg.append( 'g' )
+    .selectAll( 'rect' )
     .data( data )
-    .enter().append( 'rect' )
-    .attr( 'y', ( d ) => {
-      return svgHeight - d;
-    })
-    .attr( 'height', ( d ) => {
-      return d * 5;
-    })
-    .attr( 'width', barWidth - barPadding )
-    .attr("transform", function (d, i) {  
-      let translate = [barWidth * i, 0];  
-      return "translate("+ translate +")";  
- });
+      .join( 'rect' )
+        .attr( 'class', 'bar' )
+        .attr( 'x', d => x( d.name ) )
+        .attr( 'width', x.bandwidth() )
+        .attr( 'fill', ( d, i ) => {
+          return barColors[ i ];
+      } )
+        .transition()
+        .attr("height", d => y(0) - y(d.value))
+        .attr( 'y', d => y( d.value ) )
 
 
-  console.log( data );
+      svg.append("g")
+        .call(xAxis);
+
+      svg.append("g")
+      .call(yAxis);
 
 }
 
