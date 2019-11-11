@@ -1,0 +1,87 @@
+.bugButton {
+    background-color : olive;
+}
+.dragonButton {
+    background-color : mediumpurple;
+}
+.electricButton {
+    background-color : gold;
+}
+.fairyButton {
+    background-color : pink;
+}
+.fightingButton {
+    background-color : red;
+}
+.fireButton {
+    background-color : orangered;
+}
+.ghostButton {
+    background-color : ghostwhite;
+}
+.grassButton {
+    background-color : forestgreen;
+}
+.groundButton {
+    background-color : sienna;
+}
+.iceButton {
+    background-color : aqua;
+}
+.normalButton {
+    background-color : tan;
+}
+.poisonButton {
+    background-color : greenyellow;
+}
+.psychicButton {
+    background-color : violet;
+}
+.rockButton {
+    background-color : grey;
+}
+.waterButton {
+    background-color : royalblue;
+}
+.pokemonTypeContainer {
+    background-color : lemonchiffon;
+    width : 550px;
+    float : left;
+    display : block;
+    clear : both;
+}
+.barChartSVGContainer {
+  float : left;
+  clear : both;
+  display : block;
+  width : 550px;
+  height : 400px;
+  background-color : skyblue;
+}
+.buttonrow {
+  display : block;
+  clear : both;
+}
+.buttonRow button {
+    border-radius: 50px;
+    width : 100px;
+    height : 50px;
+    border : 2px solid black;
+    font-size: 20px;
+    margin : 3px;
+}
+.pokemonNameButtons {
+  overflow: auto;
+  width : 550px;
+  height : 200px;
+  display : block;
+  clear : both;
+  background-color : lemonchiffon;
+  margin : 3px;
+  font-size : 13px;
+}
+
+svg {
+  height : 400px;
+  width : 550px;
+}
